@@ -1,0 +1,12 @@
+apiversion: v1
+kind: Pod
+metadata:
+  name: sailorpod
+spec:
+  containers:
+    -name: sailor
+     image: techbismaya/sailor:1.0
+     port:
+      - name: sailorport
+        containerport: 8080
+        protocol: TCP
